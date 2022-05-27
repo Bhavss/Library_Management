@@ -1,0 +1,268 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto', sans-serif;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f5f5f5;
+    z-index: 9;
+}
+
+.nav{
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand-logo{
+    height: 60px;
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+}
+
+.nav-items a{
+    margin-left: 20px;
+}
+
+
+.link{
+    text-transform: capitalize;
+    padding: 0 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #383838;
+    opacity: 0.5;
+    transition: .5s;
+}
+
+.link:hover{
+    opacity: 1;
+}
+.product-container{
+    width: 100%;
+    /* padding: 0 10vw; */
+    /* overflow-x: auto; */
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+    justify-content: center;
+}
+
+.product-container::-webkit-scrollbar{
+    display: none;
+}
+
+.product-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 0 0 auto;
+    width: 70%;
+    height: 50px;
+    background-color: #383838;
+    border: 3px solid black;
+}
+.product-card.head{
+    background-color: #ff0000;
+}
+.product-thumb{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.discount-tag{
+    position: absolute;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ff7d7d;
+    right: 10px;
+    top: 10px;
+    text-transform: capitalize;
+}
+
+.card-btn{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    width: 90%;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    background: #fff;
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.product-card:hover .card-btn{
+    opacity: 1;
+}
+
+.card-btn:hover{
+    background: #efefef;
+}
+
+.product-info{
+    width: 100%;
+    height: 100px;
+    padding-top: 10px;
+}
+
+.product-brand{
+    text-transform: uppercase;
+}
+
+.product-short-des{
+    /* width: 100%; */
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav">
+            <img src="download (1).png" class="brand-logo" alt="">
+            <div class="nav-items">
+                <a href="book_request.html" class="link">request book</a>
+                <a href="room_request.html" class="link">request room</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="product-container">
+
+            <div class="product-card head">
+                <h2 class="product-brand">Name: Bhavya Kalyani</h2>
+                <h2 class="product-brand">ID: 2020a7ps0310p</h2>
+            </div>
+
+            <!-- <div class="product-card">
+                    <h2 class="product-brand">s. no.</h2>
+                    <h2 class="product-brand">book</h2>
+                    <h2 class="product-brand">ID</h2>
+                    <h2 class="product-brand">17/03/22</h2>
+                    <h2 class="product-brand">Dues</h2>
+                    <h2 class="product-brand">return</h2>
+            </div> -->
+
+            
+                <!-- fetch("http://localhost:3000/books")
+                .then((response) => {
+                    if (response.ok) {
+                      return response.json();
+                    } else {
+                      throw new Error("NETWORK RESPONSE ERROR");
+                    }
+                  })
+                  .then(data => {
+                    console.log(data);
+                    displayBook(data)
+                  })
+                  .catch((error) => console.error("FETCH ERROR:", error));
+
+                  function displayBook(data) {
+                    const book = data[0].title;
+                    const book_id = data[0].book_ID;
+                }
+                fetch('http://localhost:3000/books', {
+                    method: 'POST', // or 'PUT'
+                    headers: {
+                      'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                  })
+                  .then(response => response.json())
+                  .then(data => {
+                    console.log('Success:', data);
+                  })
+                  .catch((error) => {
+                    console.error('Error:', error);
+                  }); -->
+
+            <div class="product-card">
+                <h2 class="product-brand">1</h2>
+                <h2 class="product-brand">The Alchemist</h2>
+                <h2 class="product-brand">001</h2>
+                <h2 class="product-brand">17/03/22</h2>
+                <h2 class="product-brand">50</h2>
+                <h2 class="product-brand">returned</h2>
+            </div>
+
+            <div class="product-card">
+                <h2 class="product-brand">2</h2>
+                <h2 class="product-brand">Famous Five</h2>
+                <h2 class="product-brand">002</h2>
+                <h2 class="product-brand">24/03/22</h2>
+                <h2 class="product-brand">40</h2>
+                <h2 class="product-brand">returned</h2>
+             </div>
+
+             <div class="product-card">
+                <h2 class="product-brand">3</h2>
+                <h2 class="product-brand">Secret Seven</h2>
+                <h2 class="product-brand">003</h2>
+                <h2 class="product-brand">12/04/22</h2>
+                <h2 class="product-brand">45</h2>
+                <h2 class="product-brand"><a href>return</a></h2>
+             </div>
+
+             <div class="product-card">
+                <h2 class="product-brand">4</h2>
+                <h2 class="product-brand">Lightning Thief</h2>
+                <h2 class="product-brand">004</h2>
+                <h2 class="product-brand">28/03/22</h2>
+                <h2 class="product-brand">24</h2>
+                <h2 class="product-brand">returned</h2>
+             </div>
+
+             <div class="product-card">
+                <h2 class="product-brand">5</h2>
+                <h2 class="product-brand">Harry Potter</h2>
+                <h2 class="product-brand">005</h2>
+                <h2 class="product-brand">11/04/22</h2>
+                <h2 class="product-brand">51</h2>
+                <h2 class="product-brand"><a href>return</a></h2>
+             </div>
+            <!-- For loop for cards here -->
+            <!-- const cocktailName = cocktail.strDrink;
+                const heading = document.createElement("h1");
+                heading.innerHTML = cocktailName;
+                cocktailDiv.appendChild(heading); -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

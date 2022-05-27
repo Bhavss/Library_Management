@@ -1,0 +1,7 @@
+We have submitted a zip file which consists of an mp4 file that briefly explains the working of the database and the queries. We recommend you to go through that first once, for a clear approach.
+We have also attached a .sql file which you can directly run on your system. All the queries have been commented out so that it does not disturb any other initial process like database creation. Specific queries have been mentioned as comments which need to be uncommented before execution and then performed accordingly.
+The zip folder also consists of the documentation of our entire project which discusses about the approach and design of our databse with the help of an ER diagram and other schema designs. The relationship schema as well has been mentioned in the doc. 
+Lastly, we have also worked on the frontend/backend implementation of our library management system of the Database systems project. The frontend uses html and css as the main pillars for design and flow while backend consists of a node.js implementation through an api.
+We have managed to link our database in mySQL with the backend services as you can see in our index.js file present in the folder. You may need to change the 'host', 'user' and 'password' parameters in the index.js file before runnning it on your system.
+We have writtten some code to display the contents of our database on our frontend design in the script.js file as well. Please go through that code too.
+Hope you like our implementation from scratch!
